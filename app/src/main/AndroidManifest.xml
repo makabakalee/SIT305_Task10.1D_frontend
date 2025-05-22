@@ -17,15 +17,72 @@
         android:theme="@style/Theme.LLMExample"
         tools:targetApi="31"
         android:networkSecurityConfig="@xml/network_security_config">
+        
+        <!-- Login Activity as the launcher -->
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+            
+        <!-- Interests Activity -->
+        <activity
+            android:name=".InterestsActivity"
+            android:exported="false" />
+            
+        <!-- Home Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+            
+        <!-- Quiz Activity -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+            
+        <!-- Results Activity -->
+        <activity
+            android:name=".ResultsActivity"
+            android:exported="false" />
+            
+        <!-- Original MainActivity (for quiz loading from API) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+        
+        <!-- History Activity -->
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+            
+        <!-- Share Profile Activity -->
+        <activity
+            android:name=".ShareProfileActivity"
+            android:exported="false" />
+            
+        <!-- Upgrade Activity -->
+        <activity
+            android:name=".UpgradeActivity"
+            android:exported="false" />
+            
+        <!-- PayPal Activities -->
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.LoginActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/buttonDelete"
+                android:text="Question Title"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/buttonDelete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toStartOf="@id/imageViewStatus"
+                android:layout_marginEnd="8dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@android:drawable/ic_menu_delete" />
+
+            <ImageView
+                android:id="@+id/imageViewStatus"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_send" />
+        </RelativeLayout>
+
+        <!-- Question Text -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Question description will be displayed here."
+            android:textColor="#666666" />
+
+        <!-- Option A -->
+        <TextView
+            android:id="@+id/textViewOptionA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="A. First option"
+            android:textColor="#666666"
+            android:paddingStart="16dp" />
+
+        <!-- Option B -->
+        <TextView
+            android:id="@+id/textViewOptionB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="B. Second option"
+            android:textColor="#666666"
+            android:paddingStart="16dp" />
+
+        <!-- Option C -->
+        <TextView
+            android:id="@+id/textViewOptionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="C. Third option"
+            android:textColor="#666666"
+            android:paddingStart="16dp" />
+
+        <!-- Option D -->
+        <TextView
+            android:id="@+id/textViewOptionD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="D. Fourth option"
+            android:textColor="#666666"
+            android:paddingStart="16dp" />
+
+        <!-- User Answer -->
+        <TextView
+            android:id="@+id/textViewAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your answer: B"
+            android:textColor="#2196F3"
+            android:textStyle="bold" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="2023/10/25"
+            android:textColor="#2196F3"
+            android:textSize="12sp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView> 
